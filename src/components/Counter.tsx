@@ -1,9 +1,7 @@
+import { useTodoContext } from "@/lib/hooks"
 
-type CounterProps = {
-    totalNoOfTodo: number,
-    totalNoOfCompletedTodo: number
-}
-export default function Counter({ totalNoOfTodo, totalNoOfCompletedTodo }: CounterProps) {
+export default function Counter() {
+    const { totalNoOfCompletedTodo, totalNoOfTodo } = useTodoContext();
     return (
         <p>
             <span className='text-bold'>{totalNoOfCompletedTodo}{" "}</span>/{" "}{totalNoOfTodo} tasks completed

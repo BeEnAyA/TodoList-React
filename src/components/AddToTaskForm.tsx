@@ -3,12 +3,11 @@ import { Input } from "@/components/ui/input"
 import ReusableButton from "./ReusableButton"
 import { Label } from "@/components/ui/label"
 import { useState } from "react"
+import { useTodoContext } from "@/lib/hooks"
 
-type AddToTaskFormProps={
- handleAddTodo:(todoText: string)=>void 
-}
-export default function AddToTaskForm({handleAddTodo}:AddToTaskFormProps) {
+export default function AddToTaskForm() {
     const [todoText, setTodoText] = useState("");
+    const { handleAddTodo } = useTodoContext();
     return (
         <form onSubmit={(event) => {
             event.preventDefault();
