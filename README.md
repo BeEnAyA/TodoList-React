@@ -1,30 +1,24 @@
-# React + TypeScript + Vite
+# TodoList-react
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to TodoList-React! This is a simple Todo List application built with React and TypeScript. As a React beginner, this project aims to help you understand the basics of React while also incorporating TypeScript for better type safety and developer experience. We will also be implementing Kinde Authentication to secure the app.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Add and delete tasks
+- Mark tasks as completed
+- Kinde Authentication (coming soon)
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+To get a local copy up and running, follow these simple steps.
 
-- Configure the top-level `parserOptions` property like this:
+### Prerequisites
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+- Node.js (v14 or later)
+- npm (v6 or later) or yarn (v1.22 or later)
+
+### Clone the repository
+
+```bash
+git clone https://github.com/yourusername/TodoList-react.git
 ```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
